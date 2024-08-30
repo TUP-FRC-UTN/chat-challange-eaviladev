@@ -1,9 +1,10 @@
 <div class="card">
-    <h5 class="card-header">Usuario: Pepe</h5>
+    <h5 class="card-header">Usuario: {{usuario}}</h5>
     <div class="card-body">
-      <h5 class="card-title">Mensaje</h5>
-      <textarea class="form-control mb-4" aria-label="With textarea"></textarea>
+        <h5 class="card-title">Mensaje</h5>
+        <textarea class="form-control mb-4" aria-label="With textarea" [(ngModel)]="msj"></textarea>
 
-      <a href="#" class="btn btn-primary">Guardar</a>
+        <button class="btn btn-primary" (click)="emitirMsj()">Guardar</button>
+
     </div>
-  </div>
+</div>

@@ -12,4 +12,8 @@ import { SalaComponent } from './sala/sala.component';
 })
 export class AppComponent {
   title = 'chatroom';
+  manejarMensaje(evento: { usuario: string, msj: string }) {
+    console.log('Mensaje recibido del usuario:', evento.usuario);
+    console.log('Contenido del mensaje:', evento.msj);
+  }
 }
