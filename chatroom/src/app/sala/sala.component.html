@@ -3,4 +3,13 @@
     <div class="card-body">
       <textarea class="form-control mb-4" aria-label="With textarea"></textarea>
     </div>
+</div>
+
+<div class="row mt-5">
+  <div class="col-6">
+    <app-mensaje-usuario (outputMsj)="manejarMensaje($event)" [usuario]="'Pepe'"></app-mensaje-usuario>
   </div>
+  <div class="col-6">
+    <app-mensaje-usuario (outputMsj)="manejarMensaje($event)" [usuario]="'Maria'"></app-mensaje-usuario>
+  </div>
+</div>
